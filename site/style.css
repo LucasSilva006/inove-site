@@ -47,6 +47,29 @@ header {
   display: flex;
 }
 
+#hero-section {
+  margin-bottom: 40px;
+  padding: 15px;
+}
+
+#hero-section > a {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* DESKTOP - acima de 768px */
 @media (min-width: 768px) {
   .menu {
