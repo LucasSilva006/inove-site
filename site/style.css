@@ -17,7 +17,8 @@ h6 {
   font-style: normal;
 }
 
-p {
+p,
+ul {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -39,7 +40,8 @@ header {
   display: flex;
   position: sticky;
   top: -2px;
-  z-index: 1000; /* Fica acima dos outros elementos */
+  z-index: 1000;
+  /* Fica acima dos outros elementos */
   justify-content: space-between;
   align-items: center;
   padding: 0.5em 1.3em;
@@ -94,7 +96,7 @@ header {
   position: -2px;
 }
 
-#hero-section > a {
+#hero-section>a {
   color: #002c66;
   background-color: #fff9d7;
   padding: 12px 15px;
@@ -110,13 +112,13 @@ header {
   border-radius: 100px;
 }
 
-#hero-section > h1 {
+#hero-section>h1 {
   color: white;
   font-size: 1.8em;
   margin-right: 1.3em;
 }
 
-#hero-section > p {
+#hero-section>p {
   margin-right: 1.9em;
   color: white;
   margin-top: 1em;
@@ -156,7 +158,7 @@ Main
   padding: 16px;
 }
 
-#box-serv-1 > img {
+#box-serv-1>img {
   grid-area: img;
   width: 100%;
   height: auto;
@@ -165,20 +167,20 @@ Main
   border-radius: 10px;
 }
 
-#box-serv-1 > h3 {
+#box-serv-1>h3 {
   grid-area: titulo;
   align-self: center;
   color: #001f47;
 }
 
-#box-serv-1 > p {
+#box-serv-1>p {
   grid-area: paragrafo;
   font-size: 0.7em;
   align-self: center;
   color: #001f47;
 }
 
-#box-serv-1 > a {
+#box-serv-1>a {
   grid-area: botao;
   width: 100%;
   text-align: center;
@@ -187,6 +189,7 @@ Main
   text-decoration: none;
   padding: 0.2em 0.1em;
   border-radius: 5px;
+  margin: 10px 0 10px 0;
 }
 
 #box-serv-2 {
@@ -204,7 +207,7 @@ Main
   padding: 16px;
 }
 
-#box-serv-2 > img {
+#box-serv-2>img {
   grid-area: img;
   width: 100%;
   height: auto;
@@ -213,20 +216,20 @@ Main
   border-radius: 10px;
 }
 
-#box-serv-2 > h3 {
+#box-serv-2>h3 {
   grid-area: titulo;
   align-self: center;
   color: #001f47;
 }
 
-#box-serv-2 > p {
+#box-serv-2>p {
   grid-area: paragrafo;
   font-size: 0.7em;
   align-self: center;
   color: #001f47;
 }
 
-#box-serv-2 > a {
+#box-serv-2>a {
   grid-area: botao;
   width: 100%;
   text-align: center;
@@ -252,7 +255,7 @@ Main
   padding: 16px;
 }
 
-#box-serv-3 > img {
+#box-serv-3>img {
   grid-area: img;
   width: 100%;
   height: auto;
@@ -261,20 +264,20 @@ Main
   border-radius: 10px;
 }
 
-#box-serv-3 > h3 {
+#box-serv-3>h3 {
   grid-area: titulo;
   align-self: center;
   color: #001f47;
 }
 
-#box-serv-3 > p {
+#box-serv-3>p {
   grid-area: paragrafo;
   font-size: 0.7em;
   align-self: center;
   color: #001f47;
 }
 
-#box-serv-3 > a {
+#box-serv-3>a {
   grid-area: botao;
   width: 100%;
   text-align: center;
@@ -300,7 +303,7 @@ Main
   padding: 16px;
 }
 
-#box-serv-4 > img {
+#box-serv-4>img {
   grid-area: img;
   width: 100%;
   height: auto;
@@ -309,20 +312,20 @@ Main
   border-radius: 10px;
 }
 
-#box-serv-4 > h3 {
+#box-serv-4>h3 {
   grid-area: titulo;
   align-self: center;
   color: #001f47;
 }
 
-#box-serv-4 > p {
+#box-serv-4>p {
   grid-area: paragrafo;
   font-size: 0.7em;
   align-self: center;
   color: #001f47;
 }
 
-#box-serv-4 > a {
+#box-serv-4>a {
   grid-area: botao;
   width: 100%;
   text-align: center;
@@ -348,7 +351,7 @@ Main
   padding: 16px;
 }
 
-#box-serv-5 > img {
+#box-serv-5>img {
   grid-area: img;
   width: 100%;
   height: auto;
@@ -357,20 +360,20 @@ Main
   border-radius: 10px;
 }
 
-#box-serv-5 > h3 {
+#box-serv-5>h3 {
   grid-area: titulo;
   align-self: center;
   color: #001f47;
 }
 
-#box-serv-5 > p {
+#box-serv-5>p {
   grid-area: paragrafo;
   font-size: 0.7em;
   align-self: center;
   color: #001f47;
 }
 
-#box-serv-5 > a {
+#box-serv-5>a {
   grid-area: botao;
   width: 100%;
   text-align: center;
@@ -400,7 +403,9 @@ Main
 
 #sobre-nos .p-sobre-nos {
   color: white;
-  margin: 0 20px 10px 20px;
+  margin: 0 20px 30px 20px;
+  font-size: 0.95em;
+  text-align: justify;
 }
 
 .container-box-mais-sobre {
@@ -458,6 +463,201 @@ Main
 .cta-btn-quero-este-serv:hover {
   background-color: #fff9d7;
 }
+
+#provas-reais {
+  margin: 20px 12px;
+  text-align: center;
+}
+
+.box-prova-real {
+  max-width: 600px;
+  margin: 20px auto;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80px 80px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img-pr titulo-pr"
+    "img-pr subtitulo"
+    "paragrafo paragrafo";
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+/* Elementos do grid */
+.img-do-cliente {
+  grid-area: img-pr;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  padding: 20px;
+}
+
+.nome-do-cliente {
+  grid-area: titulo-pr;
+  font-weight: bold;
+  align-self: end;
+}
+
+.empresa-do-cliente {
+  grid-area: subtitulo;
+  align-self: start;
+}
+
+.avaliacao-do-cliente {
+  grid-area: paragrafo;
+  font-size: 0.8em;
+  margin: 0 12px;
+}
+
+
+#porque-nos-escolher {
+  background-color: #001f47;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 0 0 50px 0;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#porque-nos-escolher>h2 {
+  padding: 20px 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#porque-nos-escolher ul {
+  text-align: start;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+#portfolio {
+  padding: 30px;
+  text-align: center;
+}
+
+.box-portf {
+  margin: 12px auto;
+  padding: 12px;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+.box-portf img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+
+#formulario {
+  background-color: #001f47;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 10px 10px 0 0;
+  max-width: 500px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+#formulario h2 {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#formulario label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#formulario input,
+#formulario select,
+#formulario textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#formulario input:focus,
+#formulario select:focus,
+#formulario textarea:focus {
+  outline: 2px solid #ffc107;
+}
+
+#formulario button {
+  background-color: #ffc107;
+  color: #001f47;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#formulario button:hover {
+  background-color: #e0a800;
+}
+
+select option {
+  background-color: #001f47;
+  /* fundo das opções */
+  color: white;
+  /* cor do texto */
+}
+
+
+#rodape {
+  background-color: #001024;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+#rodape .tit-footer {
+  font-size: 1.2rem;
+  margin: 40px 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff9d7;
+}
+
+#rodape a {
+  display: block;
+  color: white;
+  margin: 6px 0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#rodape a:hover {
+  color: #ffd700;
+}
+
+#rodape p {
+  margin-top: 30px;
+  font-size: 0.7rem;
+  color: #ccc;
+}
+
+
+
 
 
 
