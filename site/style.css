@@ -136,7 +136,7 @@ Main
 
 #servicos {
   margin: 0 12px;
-    scroll-margin-top: 90px;
+  scroll-margin-top: 90px;
 }
 
 #servicos a {
@@ -398,6 +398,7 @@ Main
   background-color: #001f47;
   border-radius: 20px 20px 0 0;
   text-align: center;
+  scroll-margin-top: 75px;
 }
 
 #sobre-nos h2 {
@@ -472,7 +473,7 @@ Main
 #provas-reais {
   margin: 20px 28px;
   text-align: center;
-    scroll-margin-top: 90px;
+  scroll-margin-top: 90px;
 }
 
 .box-prova-real {
@@ -829,9 +830,9 @@ Fim Main
   #rodape {
     display: grid;
     grid-template: 1fr 1fr;
-    grid-template-areas: 
-    "box-links box-redes-sociais"
-    "p-copy p-copy"
+    grid-template-areas:
+      "box-links box-redes-sociais"
+      "p-copy p-copy"
     ;
     text-align: start;
     padding: 10px 30px;
@@ -845,7 +846,7 @@ Fim Main
     grid-area: box-redes-sociais;
   }
 
-  #rodape > p {
+  #rodape>p {
     grid-area: p-copy;
     text-align: center;
   }
