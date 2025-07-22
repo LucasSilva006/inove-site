@@ -552,6 +552,15 @@ Main
   scroll-margin-top: 60px;
 }
 
+#portfolio p{
+  text-align: justify;
+}
+
+#portfolio h4 {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
 .box-portf {
   margin: 12px auto;
   padding: 12px;
