@@ -44,7 +44,7 @@ form {
 header {
   display: flex;
   position: sticky;
-  top: -2px;
+  top: -1px;
   z-index: 1000;
   /* Fica acima dos outros elementos */
   justify-content: space-between;
@@ -98,7 +98,6 @@ header {
   margin-bottom: 20px;
   padding: 15px;
   color: #fff9d7;
-  position: -2px;
 }
 
 #hero-section>a {
@@ -438,20 +437,20 @@ Main
 }
 
 #box-mais-sobre1 {
-  grid: box1;
+  grid-area: box1;
 }
 
 #box-mais-sobre2 {
-  grid: box2;
+  grid-area: box2;
 
 }
 
 #box-mais-sobre3 {
-  grid: box3;
+  grid-area: box3;
 }
 
 #box-mais-sobre4 {
-  grid: box4;
+  grid-area: box4;
 }
 
 
@@ -474,6 +473,10 @@ Main
   margin: 20px 28px;
   text-align: center;
   scroll-margin-top: 90px;
+}
+
+#provas-reais h2 {
+  color: #001f47;
 }
 
 .box-prova-real {
@@ -552,7 +555,11 @@ Main
   scroll-margin-top: 60px;
 }
 
-#portfolio p{
+#portfolio h2 {
+  color: #001f47;
+}
+
+#portfolio p {
   text-align: justify;
 }
 
@@ -697,7 +704,7 @@ Fim Main
   }
 
   #hero-section {
-    height: 70vh;
+    height: 500px;
   }
 
   #hero-section>h1 {
@@ -756,7 +763,7 @@ Fim Main
 
   .container-box-mais-sobre {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "box1 box2 box3 box4"
     ;
@@ -778,33 +785,30 @@ Fim Main
   }
 
   #box-mais-sobre1 {
-    grid: box1;
+    grid-area: box1;
   }
 
   #box-mais-sobre2 {
-    grid: box2;
+    grid-area: box2;
 
   }
 
   #box-mais-sobre3 {
-    grid: box3;
+    grid-area: box3;
   }
 
   #box-mais-sobre4 {
-    grid: box4;
+    grid-area: box4;
   }
 
 
-  #provas-reais {
+  .boxs-provas-reais1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30px 1fr;
-    grid-template-areas:
-      "tit-provas-reais tit-provas-reais tit-provas-reais"
-      "pr-1 pr-2 pr-3"
-    ;
+    grid-template-areas: "pr-1 pr-2 pr-3";
     column-gap: 10px;
   }
+
 
   #tit-provas-reais {
     grid-area: tit-provas-reais;
@@ -858,5 +862,68 @@ Fim Main
   #rodape>p {
     grid-area: p-copy;
     text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero-section>h1 {
+    color: white;
+    font-size: 3.6em;
+    margin-right: 3em;
+    margin-top: 1em;
+  }
+
+  #hero-section>p {
+    margin-right: 15em;
+    font-size: 1.7em;
+  }
+
+  #servicos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "tit-servicos tit-servicos tit-servicos tit-servicos tit-servicos"
+      "box-serv-1 box-serv-2 box-serv-3 box-serv-4 box-serv-5";
+    align-items: stretch;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  #tit-servicos {
+    grid-area: tit-servicos;
+  }
+
+  /* Aplica a todos os boxes */
+  #box-serv-1,
+  #box-serv-2,
+  #box-serv-3,
+  #box-serv-4,
+  #box-serv-5 {
+    grid-area: unset;
+    /* deixa o grid-area definido acima funcionar */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "titulo"
+      "img"
+      "paragrafo"
+      "botao";
+    gap: 10px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #box-serv-5 {
+    max-width: 100%;
+  }
+
+  #sobre-nos{
+    max-width: 90%;
+    margin: 12px auto;
+    border-radius: 20px;
+    padding: 20px;
   }
 }
